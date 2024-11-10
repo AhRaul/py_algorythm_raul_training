@@ -30,10 +30,10 @@ def binnary_search(list, item):
 
 def output_print_result(list, item):
     """Метод вывода результатов поиска элемента"""
-    finding_index = binnary_search(list, item)  # Поищем цифру 3 в списке
-    if finding_index:                           #Если не равен None.
+    finding_index = binnary_search(list, item)  # Поищем цифру item в списке list
+    if finding_index:                           #Если НЕ равен None, выводим его
         print("Элемент " + str(item) + " найден. Его индекс в списке = " + str(finding_index))
-    else:
+    else:                                       #Если элемента нет, сообщаем об этом.
         print("Элемент " + str(item) + " НЕ найден в списке.")
 
 my_list = [1,3,5,7,9]           #Потренируемся на этом списке
